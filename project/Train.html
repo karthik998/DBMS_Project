@@ -1,0 +1,115 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: pink;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 10px;
+  background-color: pink;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  /*width: 50%; */
+  padding: 9px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: wheat;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 16px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  /*width: 50%;*/
+  opacity: 0.9;
+  
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="Train_entry.php" method="post">
+  <div class="container">
+<div style="background-color:yellow">
+    <marquee scrollamount="25"><h1 style="color:blue">Adding New Entry to TRAIN Table</h1></marquee>
+</div>
+
+    <b><h1 align="center">Please fill in this form to add entry in TRAIN table.</h1></b>
+    <hr>
+ 
+<table cellspacing=10 cellpadding=15 width="37%"> 
+<tr>
+    <td><label for="Train_NO"><b>Train_NO :</b></label></td>
+    <td><input type="text"  name="Train_NO" id="Train_NO" required></td>
+</tr>
+<tr>
+    <td><label for="Train_Name"><b>Train_Name :</b></label></td>
+    <td><input type="text"  name="Train_Name" id="Train_Name" required></td>
+</tr>
+<tr>
+    <td><label for="appt-time"><b>Arrival_Time :</b></label></td>
+    <td><input type="time"  name="Arrival_Time" id="appt-time" required></td>
+</tr>
+<tr>
+    <td><label for="appt-time"><b>Departure_Time :</b></label></td>
+    <td><input type="time"  name="Departure_Time" id="appt-time" required></td>
+</tr>
+<tr>
+    <td><label for="Availability"><b>Availability_Of_Seats:</b></label></td>
+    <td><input type="radio"  name="Availability" value="Available" id="Availability" required>Available
+    <input type="radio"  name="Availability" value="Not Available" id="Availability" required>Not Available</td>
+</tr>
+<tr>
+    <td><label for="date"><b>Dates :</b></label></td>
+    <td><input type="date"  name="Date" id="date" required></td>
+</tr>
+
+	</table> 
+   <br><br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <button type="submit" name="save" class="registerbtn" >Submit</button>
+  </div>
+    
+</form>
+
+</body>
+</html>
